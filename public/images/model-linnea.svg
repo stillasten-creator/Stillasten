@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title">
+  <title id="title">Linnea gravsten</title>
+  <rect width="900" height="675" fill="#e9eef0"/>
+  <path d="M0 505c160-40 305-42 468 0 150 39 278 30 432-28v198H0z" fill="#bdc8c4"/>
+  <g transform="translate(282 70)">
+    <path d="M95 30c98-34 210 8 254 105 40 89 8 163 23 241 10 51 35 90 71 129H70c35-53 48-103 38-152-17-85-78-132-70-206C44 91 63 50 95 30z" fill="#596163"/>
+    <path d="M130 78c74-20 150 15 182 86 30 67 0 132 16 201 8 35 22 63 45 91H124c20-42 25-82 15-121-17-65-57-100-49-155 6-43 19-79 40-102z" fill="#6f797a"/>
+    <rect x="28" y="503" width="454" height="42" rx="7" fill="#3e4749"/>
+    <rect x="0" y="542" width="510" height="30" rx="7" fill="#879092"/>
+    <path d="M170 205h142M156 264h168M183 322h112" stroke="#f7f0e5" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

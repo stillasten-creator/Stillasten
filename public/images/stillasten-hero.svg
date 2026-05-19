@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Stillasten hero image placeholder</title>
+  <desc id="desc">A calm cemetery scene with granite stones in soft Nordic light.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#aebfc2"/>
+      <stop offset="0.55" stop-color="#d8ded9"/>
+      <stop offset="1" stop-color="#eef2ea"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#536b57"/>
+      <stop offset="1" stop-color="#273f37"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1100" fill="url(#sky)"/>
+  <circle cx="1370" cy="250" r="150" fill="#f6efe0" opacity=".55" filter="url(#soft)"/>
+  <path fill="url(#grass)" d="M0 720c230-80 470-90 720-35 320 72 650 16 1080-95v510H0z"/>
+  <g fill="none" stroke="#f7f5ef" stroke-width="4" opacity=".16">
+    <path d="M80 790c320-70 560-60 800 0s500 60 840-40"/>
+    <path d="M60 880c340-80 620-65 875 0s510 50 820-44"/>
+  </g>
+  <g transform="translate(955 330)">
+    <path d="M110 115c0-58 48-105 107-105h95c59 0 107 47 107 105v415H110z" fill="#2b3435"/>
+    <path d="M143 145c0-43 35-78 79-78h85c44 0 79 35 79 78v348H143z" fill="#394445"/>
+    <rect x="76" y="525" width="392" height="52" rx="8" fill="#20292a"/>
+    <rect x="45" y="575" width="455" height="34" rx="8" fill="#566061"/>
+    <path d="M208 210h116M190 266h153M206 324h120" stroke="#e8e0d3" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(1280 495)" opacity=".75">
+    <path d="M60 80c0-42 34-76 76-76h32c42 0 76 34 76 76v238H60z" fill="#616b6c"/>
+    <rect x="35" y="316" width="235" height="35" rx="7" fill="#40494a"/>
+    <path d="M106 148h94M97 196h112" stroke="#f4eee5" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(390 470)" opacity=".86">
+    <path d="M45 70c0-38 31-69 70-69h110c39 0 70 31 70 69v245H45z" fill="#737d7f"/>
+    <rect x="12" y="312" width="350" height="38" rx="7" fill="#4f5b5d"/>
+    <path d="M98 138h142M88 188h162" stroke="#faf6ed" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

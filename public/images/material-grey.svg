@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Mörkgrå granit</title>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#596366"/>
+      <stop offset=".5" stop-color="#828d90"/>
+      <stop offset="1" stop-color="#40484b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#g)"/>
+  <path d="M-20 330c155-58 259-48 390-8 103 31 170 22 250-18v160H-20z" fill="#3f4b4e" opacity=".22"/>
+  <g fill="#f7f5ef" opacity=".2">
+    <circle cx="95" cy="90" r="3"/>
+    <circle cx="250" cy="155" r="2"/>
+    <circle cx="445" cy="120" r="2.4"/>
+    <circle cx="520" cy="295" r="2"/>
+    <circle cx="170" cy="330" r="2.5"/>
+  </g>
+</svg>

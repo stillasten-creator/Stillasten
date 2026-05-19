@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title">
+  <title id="title">Parva gravsten</title>
+  <rect width="900" height="675" fill="#e8eeea"/>
+  <path d="M0 500c160-42 312-48 480-8 136 33 267 30 420-18v201H0z" fill="#b9c9be"/>
+  <g transform="translate(280 85)">
+    <path d="M62 120c0-62 50-112 112-112h95c62 0 112 50 112 112v385H62z" fill="#222b2d"/>
+    <path d="M94 144c0-45 36-82 82-82h91c46 0 82 37 82 82v325H94z" fill="#333d40"/>
+    <rect x="28" y="500" width="430" height="42" rx="7" fill="#1f282a"/>
+    <rect x="0" y="540" width="486" height="30" rx="7" fill="#596365"/>
+    <path d="M160 200h125M137 258h172M156 315h132" stroke="#f6efe5" stroke-width="12" stroke-linecap="round"/>
+    <path d="M223 374c32-34 58-34 89 0" stroke="#c7b486" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

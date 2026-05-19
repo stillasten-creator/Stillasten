@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title">
+  <title id="title">Alva gravsten</title>
+  <rect width="900" height="675" fill="#eef2ef"/>
+  <path d="M0 510c166-55 310-42 450-5 160 42 294 23 450-35v205H0z" fill="#bfccc1"/>
+  <g transform="translate(190 250)">
+    <path d="M0 205c34-91 80-145 160-166 102-27 224 8 368-39l118 205z" fill="#323b3d"/>
+    <path d="M70 178c30-58 70-89 133-101 82-15 160 9 268-23l72 124z" fill="#485153"/>
+    <rect x="18" y="205" width="640" height="44" rx="8" fill="#20292a"/>
+    <path d="M194 130h166M174 167h214" stroke="#f6efe5" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

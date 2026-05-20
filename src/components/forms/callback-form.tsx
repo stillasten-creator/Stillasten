@@ -63,8 +63,12 @@ export function CallbackForm() {
           <Label>När passar det bäst?</Label>
           <Input className="mt-2" placeholder="T.ex. vardag efter 15" {...register("preferredTime")} />
         </div>
-        <label className="flex gap-3 text-sm leading-6 text-muted-foreground">
-          <input className="mt-1 h-5 w-5" type="checkbox" {...register("consent")} />
+        <label className="flex cursor-pointer gap-3 rounded-md border border-transparent p-2 text-sm leading-6 text-muted-foreground transition-colors hover:border-border hover:bg-muted/60">
+          <input
+            className="mt-0.5 h-6 w-6 shrink-0 accent-primary"
+            type="checkbox"
+            {...register("consent")}
+          />
           <span>Jag godkänner att Stillasten kontaktar mig om min förfrågan.</span>
         </label>
         {errors.consent?.message ? (

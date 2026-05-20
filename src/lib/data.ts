@@ -45,19 +45,19 @@ export const categories: StoneCategory[] = [
     slug: "staende",
     title: "Stående gravstenar",
     intro:
-      "Klassiska och tydliga modeller med plats for namn, datum, symboler och personlig text."
+      "Klassiska och tydliga modeller med plats för namn, datum, symboler och personlig text."
   },
   {
     slug: "liggande",
     title: "Liggande gravstenar",
     intro:
-      "Laga modeller for urngrav, mindre gravplatser eller platser dar en diskret gravvard passar bast."
+      "Låga modeller för urngrav, mindre gravplatser eller platser där en diskret gravvård passar bäst."
   },
   {
     slug: "urngrav",
-    title: "Gravstenar for urngrav",
+    title: "Gravstenar för urngrav",
     intro:
-      "Omsorgsfullt proportionerade stenar for mindre ytor, med tydlig text och enkel skotsel."
+      "Omsorgsfullt proportionerade stenar för mindre ytor, med tydlig text och enkel skötsel."
   }
 ];
 
@@ -69,7 +69,7 @@ export const stoneModels: StoneModel[] = [
     categoryLabel: "Stående",
     intro: "En lågmäld stående sten med mjuk ovankant och tydlig textyta.",
     description:
-      "Parva passar familjer som vill ha en varm, klassisk gravsten utan att uttrycket blir tungt. Formen ger bra plats for namn, datum och ett mindre ornament.",
+      "Parva passar familjer som vill ha en varm, klassisk gravsten utan att uttrycket blir tungt. Formen ger bra plats för namn, datum och ett mindre ornament.",
     image: "/images/model-parva.svg",
     alt: "Illustration av gravstenen Parva i svart granit",
     priceFrom: "fr. 18 900 kr",
@@ -88,9 +88,9 @@ export const stoneModels: StoneModel[] = [
     name: "Alva",
     category: "liggande",
     categoryLabel: "Liggande",
-    intro: "En stillsam liggande modell for urngrav och mindre gravplatser.",
+    intro: "En stillsam liggande modell för urngrav och mindre gravplatser.",
     description:
-      "Alva ar gjord for nar uttrycket ska vara enkelt och nara marken. Den fungerar fint tillsammans med lykta, liten vas eller diskret ornament.",
+      "Alva är gjord för när uttrycket ska vara enkelt och nära marken. Den fungerar fint tillsammans med lykta, liten vas eller diskret ornament.",
     image: "/images/model-alva.svg",
     alt: "Illustration av den liggande gravstenen Alva",
     priceFrom: "fr. 14 500 kr",
@@ -111,7 +111,7 @@ export const stoneModels: StoneModel[] = [
     categoryLabel: "Stående",
     intro: "En modern sten med asymmetrisk siluett och varm, personlig känsla.",
     description:
-      "Linnea passar nar gravstenen ska kannas personlig men fortfarande tidlos. Den oregelbundna kanten ger stenen ett mjukare uttryck.",
+      "Linnea passar när gravstenen ska kännas personlig men fortfarande tidlös. Den oregelbundna kanten ger stenen ett mjukare uttryck.",
     image: "/images/model-linnea.svg",
     alt: "Illustration av gravstenen Linnea med mjuk sidokant",
     priceFrom: "fr. 21 400 kr",
@@ -120,7 +120,7 @@ export const stoneModels: StoneModel[] = [
     badges: ["Modern", "Personlig"],
     included: [
       "Gravyr av namn och datum",
-      "Gravyrskiss for godkännande",
+      "Gravyrskiss för godkännande",
       "Hjälp med textplacering och ornament"
     ],
     recommendedFor: ["Personlig gravsten", "Modern form", "Ornament"]
@@ -133,20 +133,20 @@ export const materials: Material[] = [
     name: "Svart granit",
     tone: "Djup svart, polerad eller matt yta",
     description:
-      "Ett klassiskt och tydligt material dar gravyr och ljusa detaljer framtrader skarpt.",
+      "Ett klassiskt och tydligt material där gravyr och ljusa detaljer framträder skarpt.",
     maintenance:
-      "Latt att halla ren. Polerad yta bor tvattas varsamt med milda medel.",
-    priceLevel: "Mellan till hog",
+      "Lätt att hålla ren. Polerad yta bör tvättas varsamt med milda medel.",
+    priceLevel: "Mellan till hög",
     image: "/images/material-dark.svg"
   },
   {
     slug: "morkgrå-granit",
-    name: "Morkgrå granit",
+    name: "Mörkgrå granit",
     tone: "Mjuk, nordisk grå ton",
     description:
-      "Ett lugnt material som ger gravstenen en modern och naturlig karaktar.",
+      "Ett lugnt material som ger gravstenen en modern och naturlig karaktär.",
     maintenance:
-      "Tål svenska forhallanden väl och fungerar både polerad och råhuggen.",
+      "Tål svenska förhållanden väl och fungerar både polerad och råhuggen.",
     priceLevel: "Mellan",
     image: "/images/material-grey.svg"
   },
@@ -155,10 +155,10 @@ export const materials: Material[] = [
     name: "Ljusgrå granit",
     tone: "Ljus sten med tydlig struktur",
     description:
-      "Passar nar uttrycket ska vara varmt, mjukt och mindre kontraststarkt.",
+      "Passar när uttrycket ska vara varmt, mjukt och mindre kontraststarkt.",
     maintenance:
-      "Kan krava något oftare rengoring eftersom pollen och jord syns tydligare.",
-    priceLevel: "Lag till mellan",
+      "Kan kräva något oftare rengöring eftersom pollen och jord syns tydligare.",
+    priceLevel: "Låg till mellan",
     image: "/images/material-light.svg"
   }
 ];
@@ -168,64 +168,64 @@ export const guides: Guide[] = [
     slug: "hur-valjer-man-gravsten",
     title: "Hur väljer man gravsten?",
     excerpt:
-      "En lugn genomgang av form, storlek, stensort, text och tillval innan du begar offert.",
+      "En lugn genomgång av form, storlek, stensort, text och tillval innan du begär offert.",
     category: "Val och planering",
     readingTime: "6 min",
     body: [
-      "Börja med gravplatsens forutsattningar. Kyrkogårdens regler, gravens storlek och tidigare gravvardar styr ofta mer an man tror.",
-      "Valj sedan form och material. En stående sten ger mer textyta, medan en liggande sten ofta passar mindre gravplatser och urngravar.",
-      "Texten ar det viktigaste. Namn, datum och eventuell minnestext bor planeras tidigt sa att modellen far rätt proportioner."
+      "Börja med gravplatsens förutsättningar. Kyrkogårdens regler, gravens storlek och tidigare gravvårdar styr ofta mer än man tror.",
+      "Välj sedan form och material. En stående sten ger mer textyta, medan en liggande sten ofta passar mindre gravplatser och urngravar.",
+      "Texten är det viktigaste. Namn, datum och eventuell minnestext bör planeras tidigt så att modellen får rätt proportioner."
     ]
   },
   {
     slug: "gravratt-och-regler",
     title: "Gravrätt och regler",
     excerpt:
-      "Vad gravratt betyder, vem som far fatta beslut och varfor kyrkogardsforvaltningen granskar gravstenen.",
+      "Vad gravrätt betyder, vem som får fatta beslut och varför kyrkogårdsförvaltningen granskar gravstenen.",
     category: "Regler",
     readingTime: "7 min",
     body: [
-      "Gravrättsinnehavaren ansvarar normalt for beslut om gravplatsen. Innan en ny gravsten monteras ska den oftast godkannas av kyrkogardsforvaltningen.",
-      "Reglerna kan skilja sig mellan kyrkogardar. Hojd, bredd, fundament, material och losa foremal kan omfattas av lokala bestammelser.",
-      "Stillasten hjalper till att tolka forutsattningarna nar du skickar en offertforfragan och anger kyrkogard eller ort."
+      "Gravrättsinnehavaren ansvarar normalt för beslut om gravplatsen. Innan en ny gravsten monteras ska den oftast godkännas av kyrkogårdsförvaltningen.",
+      "Reglerna kan skilja sig mellan kyrkogårdar. Höjd, bredd, fundament, material och lösa föremål kan omfattas av lokala bestämmelser.",
+      "Stillasten hjälper till att tolka förutsättningarna när du skickar en offertförfrågan och anger kyrkogård eller ort."
     ]
   },
   {
     slug: "pris-och-vad-som-ingar",
     title: "Priser och vad som ingar",
     excerpt:
-      "Sa fungerar totalpris, tillval och offert nar gravstenen inte bestalls direkt online.",
+      "Så fungerar totalpris, tillval och offert när gravstenen inte beställs direkt online.",
     category: "Pris",
     readingTime: "5 min",
     body: [
-      "Ett tydligt pris bor visa vad som ingar: sten, grundgravyr, enkel skiss och normal hantering. Tillval som extra ornament, lykta eller omfattande gravyr kan paverka priset.",
-      "Hos Stillasten ar offertforfragan kostnadsfri och utan forpliktelse. Du far ett personligt prisforslag innan något formellt godkanns.",
-      "Det slutliga priset beror pa modell, stensort, textmangd, tillval och lokala krav."
+      "Ett tydligt pris bör visa vad som ingår: sten, grundgravyr, enkel skiss och normal hantering. Tillval som extra ornament, lykta eller omfattande gravyr kan påverka priset.",
+      "Hos Stillasten är offertförfrågan kostnadsfri och utan förpliktelse. Du får ett personligt prisförslag innan något formellt godkänns.",
+      "Det slutliga priset beror på modell, stensort, textmängd, tillval och lokala krav."
     ]
   },
   {
     slug: "montering-av-gravsten",
     title: "När och hur monteras gravstenen?",
     excerpt:
-      "Om ansokan, godkannande, produktion och normal vantetid innan stenen ar pa plats.",
+      "Om ansökan, godkännande, produktion och normal väntetid innan stenen är på plats.",
     category: "Process",
     readingTime: "5 min",
     body: [
-      "Montering sker normalt efter att skiss, pris och kyrkogardsforvaltningens krav ar godkanda.",
-      "Vader, tjale och lokala handlaggningstider kan paverka tidsplanen. Darfor ar det bra att vara ute i god tid.",
-      "Stillasten aterkommer med tydlig tidsplan i samband med offerten."
+      "Montering sker normalt efter att skiss, pris och kyrkogårdsförvaltningens krav är godkända.",
+      "Väder, tjäle och lokala handläggningstider kan påverka tidsplanen. Därför är det bra att vara ute i god tid.",
+      "Stillasten återkommer med tydlig tidsplan i samband med offerten."
     ]
   },
   {
     slug: "skotsel-och-rengoring",
     title: "Skötsel och rengöring",
     excerpt:
-      "Materialberoende rad for att halla gravstenen ren utan att skada yta eller gravyr.",
-    category: "Skotsel",
+      "Materialberoende råd för att hålla gravstenen ren utan att skada yta eller gravyr.",
+    category: "Skötsel",
     readingTime: "4 min",
     body: [
-      "Anvand mjuk borste, vatten och milda rengoringsmedel. Undvik starka kemikalier och hogtryckstvatt nara gravyr och fogar.",
-      "Polerade ytor visar smuts och fingeravtryck pa ett annat satt an matta ytor, men ar ofta enkla att torka av.",
+      "Använd mjuk borste, vatten och milda rengöringsmedel. Undvik starka kemikalier och högtryckstvätt nära gravyr och fogar.",
+      "Polerade ytor visar smuts och fingeravtryck på ett annat sätt än matta ytor, men är ofta enkla att torka av.",
       "Kontrollera alltid lokala regler innan du placerar lyktor, krukor eller vinterdekorationer."
     ]
   }
@@ -255,7 +255,7 @@ export const faqs = [
   {
     question: "Hur snabbt återkommer Stillasten?",
     answer:
-      "Målet är att återkomma inom 1-2 arbetsdagar. Exakt svarstid kan justeras i sajtens miljövariabler."
+      "Målet är att återkomma inom 1-2 arbetsdagar när formuläret är skickat."
   },
   {
     question: "Hjälper ni till med kyrkogårdens regler?",

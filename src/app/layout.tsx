@@ -5,7 +5,6 @@ import { AnalyticsScripts } from "@/components/integrations/analytics";
 import { CookieyesScript } from "@/components/integrations/cookieyes";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/components/site/header";
-import { MobileQuoteBar } from "@/components/site/mobile-quote-bar";
 import { siteConfig } from "@/lib/site";
 
 import "./globals.css";
@@ -33,11 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body className="min-h-screen pb-24 antialiased lg:pb-0">
+      <body className="min-h-screen antialiased">
         <Header />
         <main>{children}</main>
         <Footer />
-        <MobileQuoteBar />
         <CookieyesScript />
         <AnalyticsScripts />
       </body>

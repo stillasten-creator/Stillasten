@@ -15,14 +15,14 @@ export default function CookiePolicyPage() {
         <h1 className="mt-8 page-title">Cookiepolicy.</h1>
         <div className="mt-8 grid gap-6 leading-8 text-muted-foreground">
           <p>
-            Stillasten ska använda Cookieyes för samtycke. Nödvändiga kakor
-            används för sajtens funktion. Analys- och marknadsföringskakor ska
-            bara aktiveras efter samtycke.
+            Stillasten använder nödvändiga kakor för att sajten och formulären
+            ska fungera. Analys- och marknadsföringskakor aktiveras bara efter
+            samtycke.
           </p>
           <p>
-            GTM, GA4 och annan spårning kopplas först när Cookieyes-ID och
-            mät-ID:n finns i miljövariablerna. En färdig cookie-deklaration från
-            Cookieyes bör bäddas in här före lansering.
+            Du kan när som helst ändra eller återkalla ditt samtycke via
+            cookieinställningarna på sajten. Frågor om kakor och spårning kan
+            skickas till Stillasten via kontaktuppgifterna i sidfoten.
           </p>
         </div>
       </div>

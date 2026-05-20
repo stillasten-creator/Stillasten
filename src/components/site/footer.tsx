@@ -23,11 +23,18 @@ export function Footer() {
           </p>
           <nav className="mt-4 grid gap-3 text-sm">
             {mainNav.map((item) => (
-              <Link className="hover:underline" href={item.href} key={item.href}>
+              <Link
+                className="inline-flex min-h-11 items-center hover:underline"
+                href={item.href}
+                key={item.href}
+              >
                 {item.label}
               </Link>
             ))}
-            <Link className="font-semibold hover:underline" href={quoteCta.href}>
+            <Link
+              className="inline-flex min-h-11 items-center font-semibold hover:underline"
+              href={quoteCta.href}
+            >
               {quoteCta.label}
             </Link>
           </nav>
@@ -38,16 +45,24 @@ export function Footer() {
             Kontakt
           </p>
           <div className="mt-4 grid gap-3 text-sm">
-            <a className="hover:underline" href={`tel:${siteConfig.phone.replaceAll(" ", "")}`}>
-              {siteConfig.phone}
-            </a>
-            <a className="hover:underline" href={`mailto:${siteConfig.email}`}>
+            {siteConfig.phone ? (
+              <a
+                className="inline-flex min-h-11 items-center hover:underline"
+                href={`tel:${siteConfig.phone.replaceAll(" ", "")}`}
+              >
+                {siteConfig.phone}
+              </a>
+            ) : null}
+            <a
+              className="inline-flex min-h-11 items-center hover:underline"
+              href={`mailto:${siteConfig.email}`}
+            >
               {siteConfig.email}
             </a>
-            <Link className="hover:underline" href="/integritetspolicy">
+            <Link className="inline-flex min-h-11 items-center hover:underline" href="/integritetspolicy">
               Integritetspolicy
             </Link>
-            <Link className="hover:underline" href="/cookiepolicy">
+            <Link className="inline-flex min-h-11 items-center hover:underline" href="/cookiepolicy">
               Cookiepolicy
             </Link>
           </div>
@@ -55,8 +70,8 @@ export function Footer() {
       </div>
       <div className="border-t border-foreground/10 py-4">
         <div className="container text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Stillasten. Organisationsnummer läggs in
-          före lansering.
+          © {new Date().getFullYear()} Stillasten.
+          {siteConfig.organizationNumber ? ` Org.nr ${siteConfig.organizationNumber}.` : null}
         </div>
       </div>
     </footer>

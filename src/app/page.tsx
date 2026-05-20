@@ -17,7 +17,7 @@ export default function HomePage() {
     name: "Stillasten",
     url: siteConfig.url,
     email: siteConfig.email,
-    telephone: siteConfig.phone
+    ...(siteConfig.phone ? { telephone: siteConfig.phone } : {})
   };
 
   return (
@@ -35,13 +35,13 @@ export default function HomePage() {
           sizes="100vw"
           src="/images/stillasten-hero.svg"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-foreground/86 via-foreground/58 to-foreground/18" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-foreground/45 via-foreground/72 to-foreground/92 md:bg-gradient-to-r md:from-foreground/94 md:via-foreground/72 md:to-foreground/35" />
         <div className="container grid min-h-[calc(100svh-9rem)] max-w-none items-end py-16 md:py-20">
           <div className="max-w-3xl">
             <p className="mb-5 inline-flex rounded-full bg-white/14 px-4 py-2 text-sm font-semibold backdrop-blur">
               Kostnadsfri offert, personlig rådgivning och ingen onlinebeställning
             </p>
-            <h1 className="hero-title">
+            <h1 className="hero-title drop-shadow-sm">
               Gravstenar valda i lugn och ro.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/86 md:text-xl">
@@ -201,16 +201,18 @@ export default function HomePage() {
               >
                 Begär kostnadsfri offert
               </Link>
-              <a
-                className={cn(
-                  buttonVariants({ variant: "outline" }),
-                  "border-white/50 bg-transparent text-white hover:bg-white/10"
-                )}
-                href={`tel:${siteConfig.phone.replaceAll(" ", "")}`}
-              >
-                <Phone aria-hidden="true" className="h-4 w-4" />
-                Ring oss
-              </a>
+              {siteConfig.phone ? (
+                <a
+                  className={cn(
+                    buttonVariants({ variant: "outline" }),
+                    "border-white/50 bg-transparent text-white hover:bg-white/10"
+                  )}
+                  href={`tel:${siteConfig.phone.replaceAll(" ", "")}`}
+                >
+                  <Phone aria-hidden="true" className="h-4 w-4" />
+                  Ring oss
+                </a>
+              ) : null}
             </div>
           </aside>
         </div>

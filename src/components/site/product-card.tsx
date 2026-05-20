@@ -5,7 +5,13 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/cn";
 import type { StoneModel } from "@/lib/data";
 
-export function ProductCard({ model }: { model: StoneModel }) {
+export function ProductCard({
+  model,
+  priority = false
+}: {
+  model: StoneModel;
+  priority?: boolean;
+}) {
   return (
     <article className="overflow-hidden rounded-md border bg-card shadow-sm">
       <Link href={`/gravstenar/${model.slug}`}>
@@ -14,6 +20,7 @@ export function ProductCard({ model }: { model: StoneModel }) {
             alt={model.alt}
             className="object-cover"
             fill
+            priority={priority}
             sizes="(min-width: 1024px) 33vw, 100vw"
             src={model.image}
           />

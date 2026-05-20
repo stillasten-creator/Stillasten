@@ -71,8 +71,8 @@ export default async function GravstenSlugPage({ params }: PageProps) {
         </section>
         <section className="section-y">
           <div className="container grid gap-6 md:grid-cols-3">
-            {models.map((item) => (
-              <ProductCard key={item.slug} model={item} />
+            {models.map((item, index) => (
+              <ProductCard key={item.slug} model={item} priority={index === 0} />
             ))}
           </div>
         </section>

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
-  <title id="title">Stillasten hero image placeholder</title>
+  <title id="title">Stillasten gravstenar i stillsam kyrkogårdsmiljö</title>
   <desc id="desc">A calm cemetery scene with granite stones in soft Nordic light.</desc>
   <defs>
     <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
@@ -13,6 +13,13 @@
     </linearGradient>
     <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.9" numOctaves="3" seed="8" type="fractalNoise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA slope=".08" type="linear"/>
+      </feComponentTransfer>
     </filter>
   </defs>
   <rect width="1800" height="1100" fill="url(#sky)"/>
@@ -39,4 +46,5 @@
     <rect x="12" y="312" width="350" height="38" rx="7" fill="#4f5b5d"/>
     <path d="M98 138h142M88 188h162" stroke="#faf6ed" stroke-width="10" stroke-linecap="round"/>
   </g>
+  <rect width="1800" height="1100" filter="url(#grain)" opacity=".45"/>
 </svg>

@@ -56,11 +56,11 @@ export default function GravstenarPage() {
         <div className="container">
           <SectionHeading
             title="Modeller"
-            text="Filtrering kopplas mot Sanity i nästa fas. Tills dess visar vi seedade modeller från projektgrunden."
+            text="Välj en form som startpunkt. Pris, text, material och tillval stäms av i den personliga offerten."
           />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {stoneModels.map((model) => (
-              <ProductCard key={model.slug} model={model} />
+            {stoneModels.map((model, index) => (
+              <ProductCard key={model.slug} model={model} priority={index === 0} />
             ))}
           </div>
         </div>

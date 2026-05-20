@@ -49,8 +49,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        serif: ["Georgia", "ui-serif", "serif"]
+        sans: ["Avenir Next", "Avenir", "Helvetica Neue", "sans-serif"],
+        serif: ["Iowan Old Style", "Georgia", "ui-serif", "serif"]
       },
       borderRadius: {
         lg: "var(--radius)",

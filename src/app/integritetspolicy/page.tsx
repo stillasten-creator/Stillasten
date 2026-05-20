@@ -18,9 +18,8 @@ export default function PrivacyPage() {
         <h1 className="mt-8 page-title">Integritetspolicy.</h1>
         <div className="mt-8 grid gap-6 leading-8 text-muted-foreground">
           <p>
-            Denna sida är en starttext och ska juridiskt granskas före
-            lansering. Stillasten behandlar uppgifter som skickas via offert-
-            och kontaktformulär för att kunna återkomma med rådgivning,
+            Stillasten behandlar uppgifter som skickas via offert- och
+            kontaktformulär för att kunna återkomma med rådgivning,
             gravyrskiss och offert.
           </p>
           <p>

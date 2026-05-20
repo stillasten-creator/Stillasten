@@ -23,17 +23,24 @@ export default function ContactPage() {
             <h1 className="page-title">Kontakt och rådgivning.</h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
               Hör av dig om du vill prata igenom modell, stensort, regler eller
-              offert. Kontaktvägar och eventuell fysisk adress uppdateras innan
-              lansering.
+              offert. Skicka en förfrågan eller be oss återkomma när det passar
+              dig.
             </p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <a
-                className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
-                href={`tel:${siteConfig.phone.replaceAll(" ", "")}`}
-              >
-                <Phone aria-hidden="true" className="h-5 w-5" />
-                {siteConfig.phone}
-              </a>
+            <div
+              className={cn(
+                "mt-8 grid gap-4",
+                siteConfig.phone ? "sm:grid-cols-2" : "max-w-md"
+              )}
+            >
+              {siteConfig.phone ? (
+                <a
+                  className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+                  href={`tel:${siteConfig.phone.replaceAll(" ", "")}`}
+                >
+                  <Phone aria-hidden="true" className="h-5 w-5" />
+                  {siteConfig.phone}
+                </a>
+              ) : null}
               <a
                 className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
                 href={`mailto:${siteConfig.email}`}

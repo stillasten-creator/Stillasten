@@ -3,7 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState, type BaseSyntheticEvent, type ReactNode } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { CheckCircle2, Loader2, Upload } from "lucide-react";
 import { useForm } from "react-hook-form";
 
 import { Button } from "@/components/ui/button";
@@ -19,6 +19,7 @@ export function QuoteForm() {
   const searchParams = useSearchParams();
   const selectedModel = searchParams.get("modell") ?? "";
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [attachmentName, setAttachmentName] = useState("Ingen fil vald");
 
   const sourcePath = useMemo(() => {
     if (typeof window === "undefined") {
@@ -131,13 +132,26 @@ export function QuoteForm() {
 
       <div className="mt-5">
         <Label htmlFor="attachment">Bifoga referensbild (valfritt)</Label>
-        <Input
+        <input
           accept="image/jpeg,image/png,image/webp,application/pdf"
-          className="mt-2"
+          className="sr-only"
           id="attachment"
           name="attachment"
+          onChange={(event) =>
+            setAttachmentName(event.target.files?.[0]?.name ?? "Ingen fil vald")
+          }
           type="file"
         />
+        <label
+          className="mt-2 flex min-h-12 cursor-pointer flex-col gap-2 rounded-md border border-dashed border-input bg-white px-4 py-3 text-sm transition-colors hover:bg-muted sm:flex-row sm:items-center sm:justify-between"
+          htmlFor="attachment"
+        >
+          <span className="inline-flex items-center gap-2 font-semibold text-foreground">
+            <Upload aria-hidden="true" className="h-4 w-4" />
+            Välj bild eller PDF
+          </span>
+          <span className="break-all text-muted-foreground">{attachmentName}</span>
+        </label>
         <p className="mt-2 text-xs leading-5 text-muted-foreground">
           Foto på befintlig gravsten, skiss eller inspirationsbild. Max 10 MB.
         </p>
@@ -145,9 +159,9 @@ export function QuoteForm() {
 
       <input type="hidden" {...register("sourcePath")} />
 
-      <label className="mt-6 flex gap-3 text-sm leading-6 text-muted-foreground">
+      <label className="mt-6 flex cursor-pointer gap-3 rounded-md border border-transparent p-2 text-sm leading-6 text-muted-foreground transition-colors hover:border-border hover:bg-muted/60">
         <input
-          className="mt-1 h-5 w-5 rounded border-input text-primary focus:ring-ring"
+          className="mt-0.5 h-6 w-6 shrink-0 rounded border-input accent-primary focus:ring-ring"
           type="checkbox"
           {...register("consent")}
         />
